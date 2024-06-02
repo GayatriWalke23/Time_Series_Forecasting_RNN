@@ -6,13 +6,13 @@ The RNN model used for this task consists of three LSTM layers followed by four 
 
 #### Architecture Breakdown
 - LSTM Layers:
- - First LSTM Layer: Input size, hidden size, and number of layers with bidirectional processing.
- - Second LSTM Layer: Same hidden size and number of layers, takes output of the first layer.
- - Third LSTM Layer: Hidden size of 32, same number of layers, bidirectional processing.
+  - First LSTM Layer: Input size, hidden size, and number of layers with bidirectional processing.
+  - Second LSTM Layer: Same hidden size and number of layers, takes output of the first layer.
+  - Third LSTM Layer: Hidden size of 32, same number of layers, bidirectional processing.
 - Fully Connected Layers:
- - Four layers with decreasing hidden units (128, 64, 32, 1).
- - ReLU activation function and 0.25 dropout applied between layers.
- - Sigmoid activation function for the final output.
+  - Four layers with decreasing hidden units (128, 64, 32, 1).
+  - ReLU activation function and 0.25 dropout applied between layers.
+  - Sigmoid activation function for the final output.
 
 ## Code
 
